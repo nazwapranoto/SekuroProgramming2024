@@ -1,19 +1,18 @@
 #include <iostream>
 #include <iomanip> 
-#include <math.h> // library math
+#include <math.h>
 #include <vector> 
 #include <cstdio> //operasi file
 using namespace std;
 
 float x, y, v, t, theta,dronex,droney;
-float drone_x = 0.0;
-float drone_y = 0.0;
+double drone_x = 0.0;
+double drone_y = 0.0;
 vector<pair<float, float>> history;
 vector<pair<float, float>> Undo;
 
 void lokasi() {
-    //history.push_back(make_pair(drone_x, drone_y)); //perintah undo
-    //Undo.clear();
+    
     cout << "Koordinat x : ";//input koordinat x dengan variabel drone_x
     cin >> x; 
     cout << "Koordinat y : ";//input koordinat y dengan variabel drone_y
